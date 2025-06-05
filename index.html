@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marcos Paulo Vasconcelos Candido</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
       text-align: center;
-      padding: 50px;
+      max-width: 600px;
+      width: 100%;
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
     }
 
     h1 {
-      color: #2c3e50;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00aaff;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      color: white;
-      background-color: #3498db;
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .email a {
+      color: #00aaff;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
     }
 
-    a:hover {
-      background-color: #2980b9;
+    .email a:hover {
+      text-decoration: underline;
     }
 
-    .email {
-      margin-top: 10px;
-      color: #555;
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #00aaff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #008fcc;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Marcos Paulo Vasconcelos Candido</h1>
-  <p class="email">Contato: <a href="mailto:marcoscandidov14@gmail.com">marcoscandidov14@gmail.com</a></p>
-  <a href="./savestate/index.html">Acessar Projeto SaveState</a>
+  <div class="container">
+    <h1>Marcos Paulo Vasconcelos Candido</h1>
+    <p class="email">
+      Entre em contato: 
+      <a href="mailto:marcoscandidov14@gmail.com">marcoscandidov14@gmail.com</a>
+    </p>
+    <a href="./savestate/index.html" class="button">Acessar Projeto SaveState</a>
+  </div>
 </body>
 </html>
